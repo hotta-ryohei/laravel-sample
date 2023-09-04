@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TestsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*　//元のコード
 Route::get('/', function () {
     return view('welcome');
+});
+*/
+
+//メインページをテストページに設定
+Route::get('/', function () {
+    return view('test');
 });
