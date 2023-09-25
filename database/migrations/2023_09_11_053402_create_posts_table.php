@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->unsignedBigInteger('id');
             $table->unsignedBigInteger('user_id');
-            $table->name();
-            $table->cotents();
+            $table->varchar(50)('name');
+            $table->text('contents');
         });
     }
 
